@@ -1,6 +1,6 @@
 Somos detectives financieros, encargados de comprender la dinámica de una institución crediticia en Argentina. Nuestro objetivo principal es obtener información sobre el comportamiento del cliente, el uso de tarjetas de crédito y el rendimiento de los préstamos. Al explorar las relaciones dentro de los datos, buscamos identificar oportunidades para el crecimiento, la mitigación de riesgos y la mejora del servicio al cliente.
 
-Personajes (Hojas de Datos):
+Personajes :
 
 Clientes: Esta hoja presenta a nuestro elenco. Contiene información demográfica, ubicación (Zonal, Sucursal) y datos de contacto. Estos son los individuos cuyas vidas financieras estamos a punto de explorar.
 
@@ -9,7 +9,7 @@ TC (Tarjetas de Crédito): Esta hoja detalla la actividad de las tarjetas de cr�
 Préstamos: Esta hoja describe la cartera de préstamos. Contiene información sobre tipos de préstamos, montos, tasas de interés y calendarios de pago.
 Trama (Análisis Exploratorio):
 
-Acto 1: Conociendo a los Clientes (Explorando la Hoja Clientes)
+Acto 1: Conociendo a los Clientes 
 
 La Escena Inicial: Comenzamos perfilando nuestra base de clientes.
 
@@ -21,7 +21,7 @@ Desarrollo de Personajes: Profundizamos en los perfiles individuales de los clie
 ¿Qué tan completa es la información de contacto? ¿Faltan direcciones de correo electrónico o números de teléfono que podrían dificultar la comunicación?
 ¿Qué podemos inferir del campo "Nombre completo"? ¿Hay apellidos o grupos étnicos comunes representados?
 
-Acto 2: El Mundo del Crédito (Explorando la Hoja TC)
+Acto 2: El Mundo del Crédito 
 
 Acción Ascendente: Cambiamos nuestro enfoque al uso de tarjetas de crédito.
 ¿Cuáles son las métricas clave disponibles en la hoja TC (por ejemplo, montos de gasto, límites de crédito, fechas de pago)?
@@ -31,7 +31,7 @@ Conflictos y Desafíos: Examinamos los riesgos potenciales y las áreas de preoc
 ¿Cuál es la tasa de utilización de crédito promedio (gasto / límite de crédito)? ¿Hay clientes con tasas de utilización excesivamente altas, lo que indica una posible tensión financiera?
 ¿Hay pagos atrasados o pagos omitidos? ¿Cuál es la frecuencia y gravedad de estos problemas?
 
-Acto 3: El Panorama de los Préstamos (Explorando la Hoja Préstamos)
+Acto 3: El Panorama de los Préstamos 
 
 Clímax: Analizamos la cartera de préstamos y su rendimiento.
 ¿Qué tipos de préstamos son más comunes ("Campaña de Préstamos")?
