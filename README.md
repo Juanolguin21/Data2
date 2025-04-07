@@ -1,3 +1,8 @@
+ANTE CUALQUIER INCONVENIENTE CON LA APERTURA DEL COLAB; CONCULTAR EL DRIVE
+
+https://colab.research.google.com/drive/1pcA7lys4GgHx2xMOqciv7fVH7eExtied?usp=drive_link
+
+
 Somos detectives financieros, encargados de comprender la dinámica de una institución crediticia en Argentina. Nuestro objetivo principal es obtener información sobre el comportamiento del cliente, el uso de tarjetas de crédito y el rendimiento de los préstamos. Al explorar las relaciones dentro de los datos, buscamos identificar oportunidades para el crecimiento, la mitigación de riesgos y la mejora del servicio al cliente.
 
 Personajes :
