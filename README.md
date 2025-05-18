@@ -2,8 +2,6 @@ ANTE CUALQUIER INCONVENIENTE CON LA APERTURA DEL COLAB; CONCULTAR EL DRIVE
 
 https://colab.research.google.com/drive/1mW0Fbf15E30vq_OBrkifOWQdkKyl6sKh#scrollTo=ujlzGcDv1tcD
 
-Proximamente se detallara un PDF con el informe de todas las visualizaciones y las explicaciones basadas en los insights y demas concluciones.... como diria en NETFLIX... CONTINUARÁ!!
-
 Somos detectives financieros, encargados de comprender la dinámica de una institución crediticia en Argentina. Nuestro objetivo principal es obtener información sobre el comportamiento del cliente, el uso de tarjetas de crédito y el rendimiento de los préstamos. Al explorar las relaciones dentro de los datos, buscamos identificar oportunidades para el crecimiento, la mitigación de riesgos y la mejora del servicio al cliente.
 
 Personajes :
@@ -65,3 +63,49 @@ Preguntas Clave para Guiar la Exploración:
 ¿Cuáles son las características de nuestros clientes más valiosos?
 ¿Cuáles son los mayores riesgos para nuestra cartera de préstamos?
 ¿Cómo podemos adaptar mejor nuestros productos y servicios para satisfacer las necesidades de nuestros clientes?
+
+MACHINE LEARNING
+
+Abstracto (Motivación y Audiencia)
+Este cuaderno tiene como objetivo analizar un conjunto de datos que contiene información sobre individuos, incluyendo su CUIL, detalles de campañas de préstamos, ubicación geográfica, información de contacto y otros atributos relevantes. La motivación principal es aprovechar estos datos para predecir la probabilidad de éxito de las solicitudes de préstamo o identificar clientes potenciales para campañas de préstamos dirigidas. Este análisis puede beneficiar a las instituciones financieras, los equipos de marketing y los departamentos de evaluación de riesgos, permitiéndoles tomar decisiones basadas en datos relacionados con aprobaciones de préstamos, estrategias de marketing y segmentación de clientes.
+
+Preguntas/Definición del problema
+El principal problema que abordaremos es un problema de clasificación:
+
+Objetivo: Predecir si es probable que un individuo sea un buen candidato para un préstamo o un objetivo receptivo para una campaña de préstamos. Variable objetivo: Necesitaremos diseñar una variable objetivo basada en los datos disponibles. Por ejemplo, esto podría ser una variable binaria que represente si el individuo tiene "Paquetes" (packages) o "Cartera abierta" (open portfolio); uno podría etiquetarse como "probable que esté interesado en un préstamo" y el otro como "menos probable".
+
+Breve análisis exploratorio de datos (EDA)
+Realizaré un EDA inicial, que incluirá:
+
+Inspección de datos: Mostrar las primeras filas, verificar los tipos de datos e identificar posibles problemas. Estadísticas descriptivas: Calcular estadísticas resumidas (media, mediana, desviación estándar, etc.) para características numéricas para comprender sus distribuciones. Visualización de datos: Histogramas de características numéricas Gráficos de barras de características categóricas. Mapa de calor de correlación para identificar relaciones entre características numéricas. Análisis de valores faltantes: Identificar y cuantificar los valores faltantes en cada columna.
+
+Ingeniería de características
+Diseñaré nuevas características y transformaré las existentes, como:
+
+Crear una variable objetivo: Definir una regla para crear una variable objetivo binaria. Características geográficas: Tal vez extraer la ciudad de 'Sucursal' o crear zonal y sucursal combinadas. Características de correo electrónico: Crear una característica que indique el número de direcciones de correo electrónico disponibles (0, 1, 2 o 3). Número de teléfono: Limpiar los datos del número de teléfono y convertirlo en una variable binaria: disponible sí/no. Escalado de características numéricas: Estandarizar o normalizar características numéricas. Codificación de características categóricas: Codificar características categóricas (por ejemplo, 'Zonal', 'Sucursal') utilizando codificación one-hot u otros métodos apropiados.
+
+Entrenamiento y prueba
+Entrenaré y evaluaré al menos dos modelos diferentes de aprendizaje automático:
+
+Modelos: Regresión logística: Modelo simple e interpretable para clasificación. Bosque aleatorio: Potente método de conjunto para la clasificación, capaz de capturar relaciones no lineales. Validación cruzada: Utilizar la validación cruzada k-fold para evaluar el rendimiento del modelo y evitar el sobreajuste.
+
+Optimización
+Optimizaré los hiperparámetros del modelo utilizando una técnica como GridSearchCV o RandomizedSearchCV para encontrar la mejor configuración del modelo.
+
+Selección del modelo
+Seleccionaré el mejor modelo basándome en métricas apropiadas para la clasificación:
+
+Métricas: AUC (área bajo la curva ROC): para evaluar la capacidad del modelo para discriminar entre clases. Precisión, exhaustividad y puntuación F1: para una evaluación exhaustiva del rendimiento de la clasificación.
+
+
+Conclusión:
+
+El análisis buscó predecir la propensión a préstamos y segmentar clientes. Random Forest fue el mejor modelo, con hiperparámetros max_depth=10, n_estimators=200, y n_clusters=7, obteniendo un AUC de 0.5776 en el conjunto de prueba.
+
+Hallazgos: Si bien el modelo puede discriminar relativamente bien entre clases (AUC 0.5776), tiene una precisión baja (0.1590), lo que indica muchos falsos positivos, y un recall de 0.5140. Esto implica que identifica correctamente solo la mitad de los potenciales interesados en un préstamo.
+
+Recomendaciones:
+
+Considerar otros modelos o técnicas de mejora para aumentar la precisión. Analizar las características de los clientes en cada clúster para diseñar estrategias de marketing y evaluación de riesgo personalizadas. Limitaciones:
+
+Debido al AUC modesto, se recomienda usar este modelo con precaución y complementarlo con otras fuentes de información y criterio experto.
