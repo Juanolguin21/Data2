@@ -1,7 +1,6 @@
 ANTE CUALQUIER INCONVENIENTE CON LA APERTURA DEL COLAB; CONCULTAR EL DRIVE
 
-https://colab.research.google.com/drive/1pcA7lys4GgHx2xMOqciv7fVH7eExtied?usp=drive_link
-
+https://colab.research.google.com/drive/1mW0Fbf15E30vq_OBrkifOWQdkKyl6sKh#scrollTo=ujlzGcDv1tcD
 
 Proximamente se detallara un PDF con el informe de todas las visualizaciones y las explicaciones basadas en los insights y demas concluciones.... como diria en NETFLIX... CONTINUARÁ!!
 
